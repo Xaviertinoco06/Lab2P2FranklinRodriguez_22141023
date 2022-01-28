@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Lab2P2_FranklinRodriguez_22141023 {
-    public class ArrayAnimals {
+
         static Scanner scan = new Scanner(System.in);
         static ArrayList<Animales> Animales = new ArrayList<>();
         static Animales defaults = new Animales();
@@ -112,6 +112,13 @@ public class Lab2P2_FranklinRodriguez_22141023 {
                     break;
             }
         }
+        public static void printCientifica() {
+            System.out.println("Ingrese Nombre Cientifico: ");
+            String nCientifico = scan.next();
+            Animales.stream().filter(animal -> (nCientifico.equals(animal.getNombreCient()))).forEachOrdered(animal -> {
+                System.out.println(animal);
+            });
+        }
         public static void editarTodos(int pos) {
             System.out.println("Nombre Cientifico: ");
             Animales.get(pos).setNombreCient(scan.next());
@@ -163,6 +170,6 @@ public class Lab2P2_FranklinRodriguez_22141023 {
 
         }
     }
-}
+
 
 
