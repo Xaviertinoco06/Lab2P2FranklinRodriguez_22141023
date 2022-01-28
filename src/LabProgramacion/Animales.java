@@ -1,17 +1,21 @@
 package LabProgramacion;
 
+import java.util.GregorianCalendar;
+
 public class Animales {
+    private String nombreCient;
     private String nombrecomun;
     private String habitat;
     private String alimentacion;
     private String descricionRasgos;
     private String geografica;
-    private int vida;
+     int vida;
 
-}
+
 public Animales() {
 }
-    public Animales(String nombrecomun, String habitat, String alimentacion, String descricionRasgos, String geografica, int vida) {
+    public Animales(String nombrecomun,String nombreCient ,String habitat, String alimentacion, String descricionRasgos, String geografica, int vida) {
+    this.nombreCient=nombreCient;
     this.nombrecomun=nombrecomun;
     this.habitat=habitat;
     this.alimentacion=alimentacion;
@@ -27,6 +31,14 @@ public Animales() {
 
     public void setNombrecomun(String nombrecomun) {
         this.nombrecomun = nombrecomun;
+    }
+
+    public String getNombreCient() {
+        return nombreCient;
+    }
+
+    public void setNombreCient(String nombreCient) {
+        this.nombreCient = nombreCient;
     }
 
     public String getHabitat() {
@@ -67,10 +79,14 @@ public Animales() {
 
     public void setVida(int vida) {
         this.vida = vida;
+    }
 
 
-        public String toString() {
-            return "Animales{" + "Nombre Comun=" + nombrecomun + ", Habitat=" + habitat + ", Alimentacion=" + alimentacion + ", Descripcion de Rasgos=" + descricionRasgos + ", Ubicacion Geografica=" + geografica + ", Vida=" +vida+'}';
+            public String toString() {
+                return "Nombre Cientifico: "+nombreCient+"\tNombre Comun: "+nombrecomun+
+                        "\nHabitat: "+habitat+"\tAlimento"+alimentacion+"\nDescripciones de Rasgos: "+descricionRasgos+
+                        "\tDistribucion Geografica: "+ geografica +"\nVida: "+vida;
+            }
 
 
         }
@@ -78,8 +94,8 @@ public Animales() {
 
 
 
-    }
 
 
-}
+
+
 
