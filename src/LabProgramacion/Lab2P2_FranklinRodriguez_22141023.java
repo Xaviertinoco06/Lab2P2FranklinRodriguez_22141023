@@ -22,7 +22,6 @@ public class Lab2P2_FranklinRodriguez_22141023 {
             System.out.println("\n0. Salir\n1. Crear Animales\n2. Eliminar Animales\n3. Editar Atributos\n4. Imprimir\n5. Cadena Alimentacia\nIngrese una opcion: ");
             return scan.nextInt();
         }
-
         public static void Opciones(int opcion) {
             switch (opcion) {
                 case 1:
@@ -50,8 +49,6 @@ public class Lab2P2_FranklinRodriguez_22141023 {
             defaults3 = new Animales("Perro", "Canis lupus familiaris", "Mi casa", "Carne", "peludos", "Todo el mundo", 15);
             Animales.add(defaults3);
         }
-
-
         public static void crearAnimal() {
             System.out.print("Nombre Cientifico: ");
             String nombrecientifico = scan.next();
@@ -69,7 +66,6 @@ public class Lab2P2_FranklinRodriguez_22141023 {
             int vida =scan.nextInt();
             Animales.add(new Animales(nombrecientifico, nombrecomun, habitat, Alimento, descripcion, geografia, vida));
         }
-
         public static void editarAtributos() {
             System.out.print("Ingrese la posicion: ");
             int pos = scan.nextInt();
@@ -82,7 +78,6 @@ public class Lab2P2_FranklinRodriguez_22141023 {
                 editarTodos(pos);
             }
         }
-
         public static void editarUnAtributo(int pos) {
             System.out.println("1. Nombre Cientifico\t2. Nombre Comun\n3. Habitat\t4. Alimentacion" + "\n5. Descripcion de Rasgos\t6. Ubicacion Geografica\n7. Vida\tIngrese la opcion: ");
             int opcion = scan.nextInt();
@@ -117,7 +112,6 @@ public class Lab2P2_FranklinRodriguez_22141023 {
                     break;
             }
         }
-
         public static void editarTodos(int pos) {
             System.out.println("Nombre Cientifico: ");
             Animales.get(pos).setNombreCient(scan.next());
@@ -139,8 +133,6 @@ public class Lab2P2_FranklinRodriguez_22141023 {
             System.out.print("Posicion del animal a eliminar: ");
             Animales.remove(scan.nextInt());
         }
-
-
         public static void Imprimir() {
             System.out.println("1. Imprimir por posición de la lista\n2. Imprimir lista completa\n3. Imprimir por nombre científico");
             if (scan.nextInt() == 1) {
@@ -150,7 +142,6 @@ public class Lab2P2_FranklinRodriguez_22141023 {
             } else if (scan.nextInt() == 3);
 
         }
-
 
         public static void Lista() {
             System.out.println("Ingrese la posicion: ");
@@ -162,7 +153,6 @@ public class Lab2P2_FranklinRodriguez_22141023 {
                 Animales.get(i).toString();
             }
         }
-
         public static void Alimenticia(){
             System.out.println("Posicion del Animal el que va a comer: ");
             int posicion=scan.nextInt();
