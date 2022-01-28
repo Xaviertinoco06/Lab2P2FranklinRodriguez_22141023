@@ -7,13 +7,18 @@ public class Lab2P2_FranklinRodriguez_22141023 {
 
     public static ArrayList<Animales> lista = new ArrayList();
     public static Animales Predeterminado  = new Animales();
-    public static Animales  = new Animales();
+
     public static Scanner scan = new Scanner(System.in);
+
+
+
+
 
 
     public static void editarAnimales(){
         System.out.print("Ingrese la posicion: ");
         int pos=scan.nextInt();
+        System.out.println("Animal seleccionado: "+animales.get(pos).getNombreCientifico());
         System.out.println("1.Un atributo");
         System.out.println("2.Todos los atributos");
         System.out.print("Ingrese la opcion: ");
@@ -22,6 +27,7 @@ public class Lab2P2_FranklinRodriguez_22141023 {
             editarUnAtributo(pos);
         else if(opcion == 2)
             editarAtributos(pos);
+
 
     }
     public static void editarUnAtributo(int pos){
@@ -70,7 +76,12 @@ public class Lab2P2_FranklinRodriguez_22141023 {
         lista.get(pos).setVida(scan.nextInt());
 
 
+        public static void eliminarAnimales(){
+            System.out.print("Posicion: ");
+            lista.remove(scan.nextInt());
+
     }
+
 
 
 }

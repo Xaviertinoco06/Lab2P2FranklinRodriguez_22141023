@@ -70,7 +70,7 @@ public Animales() {
 
 
         public String toString() {
-            return "Animales{" + "Nombre Comun=" + nombrecomun + ", Habitat=" + habitat + ", =" + contrasena + ", correo=" + correo + ", numeroCuenta=" + numeroCuenta + ", anioIngreso=" + anioIngreso + ", tipo=" + tipo + '}';
+            return "Animales{" + "Nombre Comun=" + nombrecomun + ", Habitat=" + habitat + ", Alimentacion=" + alimentacion + ", Descripcion de Rasgos=" + descricionRasgos + ", Ubicacion Geografica=" + geografica + ", Vida=" +vida+'}';
 
 
         }
