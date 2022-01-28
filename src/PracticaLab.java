@@ -4,7 +4,7 @@ public class PracticaLab {
     public static Scanner scan=new Scanner(System.in);
     public static a
     public static void main(String[] args) {
-        opcion( menu() );
+
 
         pub
     }
