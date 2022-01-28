@@ -23,6 +23,7 @@ public Animales() {
     this.geografica=geografica;
     this.vida=vida;
 
+
     }
 
     public String getNombrecomun() {

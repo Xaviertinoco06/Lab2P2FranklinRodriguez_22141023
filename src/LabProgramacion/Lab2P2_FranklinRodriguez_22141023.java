@@ -160,6 +160,7 @@ public class Lab2P2_FranklinRodriguez_22141023 {
             int posicionc=scan.nextInt();
             Animales.get(posicion).vida+=Animales.get(posicionc).vida;
             Animales.remove(posicionc);
+
         }
     }
 }
